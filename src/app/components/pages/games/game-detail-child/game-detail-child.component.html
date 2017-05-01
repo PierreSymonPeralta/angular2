@@ -1,0 +1,13 @@
+<h3>Child Component</h3>
+<input type="text" name="" value="Child Value" [(ngModel)]="childValue" (keyup)="onChange(childValue)">
+<br><br>
+<p>This value is from Parent Component:</p><h4>{{parentValue}}</h4>
+<div class="row">
+  <div class="col-md-6">
+    <input type="text" name="name" value="input value" (keyup)="onKey($event)">
+    <p>{{inputValue}}</p>
+  </div>
+  <div class="col-md-6">
+
+  </div>
+</div>

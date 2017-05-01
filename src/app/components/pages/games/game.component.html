@@ -1,0 +1,22 @@
+<!-- <a [routerLink]="['/game-details', 2]">Show Details thru Link</a>
+<button (click)="gotoDetailPage()">Show Details thru Program</button> -->
+<div>
+	<h2>GAMES</h2>
+</div>
+<div *ngIf="selectedId">
+	<label>Prev Selected:</label><h4>{{selectedId}}</h4>
+</div>
+<div class="row">
+	<ul class="item-list">
+		<li *ngFor="let game of listOfGames">
+			<div class="item well" (click)="onSelect(game)">
+				ID:{{game.Id}}
+				<p>{{game.Name}}</p>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="row">
+	
+</div>
+
